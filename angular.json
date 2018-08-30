@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../chat-application/node_modules/bootstrap/dist/css/bootstrap.min.css",
+             "../chat-application/node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": []
+            "scripts": ["../chat-application/node_modules/jquery/dist/jquery.min.js",
+              "../chat-application/node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
