@@ -10,6 +10,7 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { ToastrModule } from 'ngx-toastr';
       { path: '**', component: LoginComponent}
     ])
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
